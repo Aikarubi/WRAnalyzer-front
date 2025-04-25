@@ -1,0 +1,41 @@
+.footer {
+    background-color: var(--azulOscuro);
+    padding: 2rem 1rem;
+}
+
+.footer__contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.footer__logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.footer__texto h1 {
+    color: var(--blanco);
+    margin: 0;
+}
+
+.footer__texto p {
+    color: var(--blanco);
+    margin: 0.5rem 0 0 0;
+    text-align: center;
+}
+
+.footer__contacto {
+    text-align: center;
+    color: var(--blanco);
+    margin: 1rem 0;
+}
+
+.footer__copyright {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 1.2rem;
+}
