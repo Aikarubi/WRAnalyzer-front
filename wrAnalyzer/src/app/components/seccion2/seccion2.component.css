@@ -1,12 +1,12 @@
 .nosotros {
     text-align: center;
-    margin: 40px auto;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .nosotros h2 {
     font-weight: 600;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .nosotros p {

@@ -1,3 +1,7 @@
+.header {
+    background-color: var(--azulOscuro);
+}
+
 .header__logo {
     width: 100px;
     height: 100px;

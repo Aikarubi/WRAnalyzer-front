@@ -1,0 +1,76 @@
+main {
+    text-align: center;
+}
+
+/* Sección del título */
+.title-section {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: url('../../../../public/fondo4.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.title-img {
+    max-width: 60%;
+    margin-top: 3rem;
+    height: auto;
+    z-index: 2;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
+
+}
+
+/* Cajita del botón */
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem
+  }
+  
+  .button-border {
+    padding: 2rem;
+    border: 3px dashed #c9a15b; /* Color dorado */
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05); /* Fondo muy suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Botón ya lo tienes, pero puedes hacer un pequeño retoque si quieres */
+  .analyze-btn {
+    background-color: #1f4a83;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 18px 36px;
+    border: 3px solid #c9a15b;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+  }
+  
+  .analyze-btn:hover {
+    background-color: #1560a1;
+    border-color: #f1c40f;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
