@@ -1,0 +1,16 @@
+.nosotros {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.nosotros h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.nosotros p {
+    line-height: 1.6;
+    margin: 0 2.5rem;
+    color: var(--gris);
+}
