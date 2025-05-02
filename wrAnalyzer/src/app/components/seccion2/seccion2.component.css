@@ -1,16 +1,22 @@
 .nosotros {
-    text-align: center;
-    padding: 2rem;
+  background-color: var(--blancoSuave); /* Cambié a blanco perla para mantener la armonía */
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-.nosotros h2 {
-    font-weight: 600;
-    margin-bottom: 20px;
-    margin-top: 0;
+.nosotros__contenido {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.nosotros p {
-    line-height: 1.6;
-    margin: 0 2.5rem;
-    color: var(--gris);
+.texto h2 {
+  font-size: 2rem;
+  color: var(--NegroAzulado); /* Mantengo el azul profundo para un contraste elegante */
+  margin-bottom: 1rem;
+}
+
+.texto p {
+  font-size: 1.1rem;
+  color: var(--azulOscuro); /* Cambié a gris claro para mayor suavidad */
+  line-height: 1.8;
 }

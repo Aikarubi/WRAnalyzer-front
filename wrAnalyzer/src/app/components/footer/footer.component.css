@@ -1,41 +1,79 @@
 .footer {
-    background-color: var(--azulOscuro);
-    padding: 2rem 1rem;
+  background-color: var(--negroAzulado); /* Fondo oscuro */
+  padding: 2rem 1.5rem;
+  color: var(--blancoSuave); /* Texto principal */
+  font-size: 0.95rem;
+  position: relative; /* Necesario para el overlay */
+  overflow: hidden;   /* Asegura que el overlay no sobresalga */
 }
 
-.footer__contenido {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(134, 94, 65, 0.149); /* Puedes ajustar el color */
+  pointer-events: none; /* No interfiere con clics */
+  z-index: 0;
 }
 
-.footer__logo img {
-    width: 80px;
-    height: 80px;
+.footer__top,
+.footer__bottom {
+  position: relative;
+  z-index: 1;
 }
 
-.footer__texto h1 {
-    color: var(--blanco);
-    margin: 0;
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
 }
 
-.footer__texto p {
-    color: var(--blanco);
-    margin: 0.5rem 0 0 0;
-    text-align: center;
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.footer__contacto {
-    text-align: center;
-    color: var(--blanco);
-    margin: 1rem 0;
+.footer__logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
 }
 
-.footer__copyright {
-    text-align: center;
-    color: var(--blanco);
-    font-size: 1.2rem;
+.footer__info h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: var(--blancoSuave);
+}
+
+.footer__info p {
+  margin: 0.3rem 0 0;
+  color: var(--grisClaroAzulado); /* Contraste suave */
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__links a {
+  color: var(--blancoSuave);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__links a:hover {
+  color: var(--naranjaDorado); /* Efecto visual atractivo */
+}
+
+.footer__bottom {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--grisClaroAzulado); /* Para el texto menor */
 }
