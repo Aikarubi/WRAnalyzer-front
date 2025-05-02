@@ -1,5 +1,5 @@
 .inicio {
-  background-color: var(--blancoSuave); /* Gris claro azulado para el fondo de la sección */
+  background-color: var(--blancoSuave);
   padding: 5rem 2rem;
   text-align: center;
 }
@@ -7,7 +7,7 @@
 .cta-hero {
   max-width: 700px;
   margin: 0 auto;
-  background-color: var(--grisClaro); /* Blanco suave para el fondo del CTA */
+  background-color: var(--grisClaro);
   padding: 3rem 2rem;
   border-radius: 1.2rem;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.05) 0px 16px 16px;
@@ -15,13 +15,13 @@
 
 .cta-hero h1 {
   font-size: 2.5rem;
-  color: var(--negroAzulado); /* Azul oscuro para el título */
+  color: var(--negroAzulado); 
   margin-bottom: 1rem;
 }
 
 .cta-hero p {
   font-size: 1.2rem;
-  color: var(--grisVerde); /* Gris verde para el texto secundario */
+  color: var(--grisVerde);
   margin-bottom: 2rem;
 }
 
@@ -54,7 +54,7 @@
   left: 0;
   display: block;
   border-radius: 2.8rem;
-  background: rgba(242, 156, 107, 0.5); /* var(--naranjaDorado) con opacidad */
+  background: rgba(242, 156, 107, 0.5); 
   width: 56px;
   height: 56px;
   transition: all 0.3s ease;
@@ -90,4 +90,45 @@
 
 .analyze-btn:active {
   transform: scale(0.96);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { 
+
+  .cta-hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .cta-hero p {
+    font-size: 1.5rem;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  .inicio {
+    padding: 7rem 4rem;
+  }
+
+  .cta-hero {
+    padding: 4rem 3rem;
+    max-width: 800px;
+  }
+
+  .cta-hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .cta-hero p {
+    font-size: 1.5rem;
+  }
+
+  .analyze-btn {
+    font-size: 1.1rem;
+    padding: 1.4rem 2.5rem;
+  }
+
+  .analyze-btn::before {
+    width: 64px;
+    height: 64px;
+  }
 }

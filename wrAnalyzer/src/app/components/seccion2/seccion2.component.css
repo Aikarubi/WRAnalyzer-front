@@ -1,5 +1,5 @@
 .nosotros {
-  background-color: var(--blancoSuave); /* Cambié a blanco perla para mantener la armonía */
+  background-color: var(--blancoSuave);
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -11,12 +11,44 @@
 
 .texto h2 {
   font-size: 2rem;
-  color: var(--NegroAzulado); /* Mantengo el azul profundo para un contraste elegante */
+  color: var(--NegroAzulado);
   margin-bottom: 1rem;
 }
 
 .texto p {
   font-size: 1.1rem;
-  color: var(--azulOscuro); /* Cambié a gris claro para mayor suavidad */
+  color: var(--azulOscuro);
   line-height: 1.8;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .nosotros {
+    padding: 6rem 4rem;
+  }
+
+  .texto h2 {
+    font-size: 3.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .texto p {
+    font-size: 1.5rem;
+  }
+
+ }
+
+@media (min-width: 1024px) {
+  .nosotros {
+    padding: 8rem 4rem;
+  }
+
+  .texto h2 {
+    font-size: 3.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .texto p {
+    font-size: 1.5rem;
+  }
 }

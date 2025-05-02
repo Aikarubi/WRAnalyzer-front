@@ -1,18 +1,18 @@
 .footer {
-  background-color: var(--negroAzulado); /* Fondo oscuro */
+  background-color: var(--negroAzulado);
   padding: 2rem 1.5rem;
-  color: var(--blancoSuave); /* Texto principal */
+  color: var(--blancoSuave);
   font-size: 0.95rem;
-  position: relative; /* Necesario para el overlay */
-  overflow: hidden;   /* Asegura que el overlay no sobresalga */
+  position: relative;
+  overflow: hidden;
 }
 
 .footer::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(134, 94, 65, 0.149); /* Puedes ajustar el color */
-  pointer-events: none; /* No interfiere con clics */
+  background-color: rgba(134, 94, 65, 0.149);
+  pointer-events: none;
   z-index: 0;
 }
 
@@ -52,7 +52,7 @@
 
 .footer__info p {
   margin: 0.3rem 0 0;
-  color: var(--grisClaroAzulado); /* Contraste suave */
+  color: var(--grisClaroAzulado);
 }
 
 .footer__links {
@@ -68,12 +68,110 @@
 }
 
 .footer__links a:hover {
-  color: var(--naranjaDorado); /* Efecto visual atractivo */
+  color: var(--naranjaDorado);
 }
 
 .footer__bottom {
   margin-top: 1.5rem;
   text-align: center;
   font-size: 0.85rem;
-  color: var(--grisClaroAzulado); /* Para el texto menor */
+  color: var(--grisClaroAzulado);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { 
+
+  .footer {
+    padding: 3rem;
+  }
+
+  .footer__top,
+  .footer__bottom {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .footer__top {
+    gap: 4rem;
+  }
+
+  .footer__brand {
+    gap: 2rem;
+  }
+
+  .footer__logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer__info h2 {
+    font-size: 2.2rem;
+  }
+
+  .footer__info p {
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+  }
+
+  .footer__links a {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  .footer__links a:hover {
+    color: var(--naranjaDorado);
+  }
+
+  .footer__bottom {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 6rem 4rem;
+  }
+
+  .footer__top,
+  .footer__bottom {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .footer__top {
+    gap: 4rem;
+  }
+
+  .footer__brand {
+    gap: 2rem;
+  }
+
+  .footer__logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer__info h2 {
+    font-size: 2rem;
+  }
+
+  .footer__info p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .footer__links a {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .footer__links a:hover {
+    color: var(--naranjaDorado);
+  }
+
+  .footer__bottom {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
 }

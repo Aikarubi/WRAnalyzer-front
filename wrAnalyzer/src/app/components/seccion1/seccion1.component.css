@@ -7,7 +7,7 @@
 
 
 .funciona__titulo {
-  color: var(--negroAzulado); /* Mejor legibilidad */
+  color: var(--negroAzulado); 
   margin-bottom: 3rem;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .paso {
-  background-color: var(--gris); /* Fondo claro translúcido */
+  background-color: var(--gris);
   border-radius: 1rem;
   padding: 2rem 1.5rem;
   flex: 1 1 250px;
@@ -39,7 +39,7 @@
 
 .numero {
   background-color: var(--naranjaDorado); 
-  color: var(--negroAzulado); /* Alto contraste */
+  color: var(--negroAzulado);
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -54,5 +54,79 @@
 .paso p {
   margin: 0;
   font-size: 1rem;
-  color: var(--grisVerde); /* Texto secundario legible */
+  color: var(--grisVerde);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .funciona {
+    padding: 6rem 4rem 9rem;
+    background-size: 150px 150px; 
+  }
+
+  .funciona__titulo {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .funciona__pasos {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .paso {
+    max-width: 300px;
+    padding: 3rem 2rem;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .numero {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .paso p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+}  
+
+@media (min-width: 1024px) {
+  .funciona {
+    padding: 6rem 4rem;
+    background-size: 150px 150px; 
+  }
+
+  .funciona__titulo {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .funciona__pasos {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .paso {
+    max-width: 300px;
+    padding: 3rem 2rem;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .numero {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .paso p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
 }
