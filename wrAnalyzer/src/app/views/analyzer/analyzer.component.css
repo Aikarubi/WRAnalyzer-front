@@ -1,0 +1,101 @@
+.inicio {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* --- ROL --- */
+  .rol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .rol__jugador,
+  .rol__enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .rol__jugador img,
+  .rol__enemigo img {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  
+  .info__rol {
+    max-width: 800px;
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* --- ANÁLISIS --- */
+  .analisis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .analisis__fases,
+  .analisis__items,
+  .analisis__rotaciones,
+  .analisis__objetivos {
+    background-color: #222;
+    color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .analisis__fases ul,
+  .analisis__items ul,
+  .analisis__rotaciones ul,
+  .analisis__objetivos ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .analisis__fases li,
+  .analisis__items li,
+  .analisis__rotaciones li,
+  .analisis__objetivos li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .analisis__consejo p {
+    background-color: #111;
+    padding: 0.75rem;
+    border-left: 4px solid #00c8ff;
+    font-size: 0.95rem;
+    border-radius: 5px;
+  }
+  
+  /* --- BOTÓN (por si agregas uno luego) --- */
+  .btn {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .btn button {
+    padding: 0.75rem 2rem;
+    border: none;
+    background: #00c8ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn button:hover {
+    background: #009ecc;
+  }
