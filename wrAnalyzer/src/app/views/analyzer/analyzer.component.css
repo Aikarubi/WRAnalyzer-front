@@ -1,101 +1,224 @@
 .inicio {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  /* --- ROL --- */
-  .rol {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    text-align: center;
-  }
-  
-  .rol__jugador,
-  .rol__enemigo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .rol__jugador img,
-  .rol__enemigo img {
-    width: 60px;
-    height: 60px;
-    background-color: #ccc;
-    border-radius: 50%;
-  }
-  
-  .info__rol {
-    max-width: 800px;
-    background: #fff;
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* --- ANÁLISIS --- */
-  .analisis {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .analisis__fases,
-  .analisis__items,
-  .analisis__rotaciones,
-  .analisis__objetivos {
-    background-color: #222;
-    color: #fff;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .analisis__fases ul,
-  .analisis__items ul,
-  .analisis__rotaciones ul,
-  .analisis__objetivos ul {
-    padding-left: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .analisis__fases li,
-  .analisis__items li,
-  .analisis__rotaciones li,
-  .analisis__objetivos li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .analisis__consejo p {
-    background-color: #111;
-    padding: 0.75rem;
-    border-left: 4px solid #00c8ff;
-    font-size: 0.95rem;
-    border-radius: 5px;
-  }
-  
-  /* --- BOTÓN (por si agregas uno luego) --- */
-  .btn {
-    text-align: center;
-    margin-top: 2rem;
-  }
-  
-  .btn button {
-    padding: 0.75rem 2rem;
-    border: none;
-    background: #00c8ff;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .btn button:hover {
-    background: #009ecc;
-  }
+  padding: 2rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.rol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.rol__jugador,
+.rol__enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rol__jugador img,
+.rol__enemigo img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.4rem solid var(--naranjaDorado);
+}
+
+.rol__jugador p,
+.rol__enemigo p { 
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.rol__vs {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--NegroAzulado);
+  padding: 0 1rem 5rem;
+}
+
+.info__rol {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: var(--azulOscuro);
+  max-width: 38rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+/* === SECCIÓN DE ANÁLISIS === */
+.analisis {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.analisis__fases,
+.analisis__items,
+.analisis__rotaciones,
+.analisis__objetivos {
+  background-color: var(--blancoSuave);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.analisis h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--NegroAzulado);
+}
+
+.analisis ul {
+  list-style: disc inside;
+  margin-bottom: 1rem;
+  color: var(--azulOscuro);
+}
+
+.analisis__consejo p {
+  font-style: italic;
+  color: var(--grisClaroAzulado);
+}
+
+/* === BOTÓN ABAJO === */
+.analyze-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  padding: 1.2rem 2rem;
+  border-radius: 2.8rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--negroAzulado);
+  transition: all 0.2s ease;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.analyze-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 2.8rem;
+  background: rgba(242, 156, 107, 0.5); 
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.analyze-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.analyze-btn svg {
+  position: relative;
+  z-index: 1;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--negroAzulado);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.analyze-btn:hover::before {
+  width: 100%;
+  background: var(--naranjaDorado);
+}
+
+.analyze-btn:hover svg {
+  transform: translateX(0);
+}
+
+.analyze-btn:active {
+  transform: scale(0.96);
+}
+
+.analisis__fases h3 {
+  font-size: 1.4rem;
+  border-left: 4px solid #f29c6b;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.consejo-experto {
+  background-color: #fff7e6;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #f29c6b;
+  font-style: italic;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  color: #5c5c5c;
+}
+
+.rol-info {
+  background-color: #ffffff;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="4" height="4"%3E%3Ccircle cx="2" cy="2" r="1" fill="%23f0f0f0" /%3E%3C/svg%3E');
+  padding: 1.5rem 1.2rem;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  max-width: 90%;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.rol-info strong {
+  color: #f29c6b;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.rol-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 150%;
+  height: 4px;
+  background-color: #f29c6b;
+  transform: translateX(-50%);
+}
+
+.rol-info::after {
+  content: " "; 
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 150%;
+  height: 4px;
+  background-color: #f29c6b;
+  transform: translateX(-50%);
+}
+
+
+
+
