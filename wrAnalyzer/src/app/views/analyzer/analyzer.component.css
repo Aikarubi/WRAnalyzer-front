@@ -90,6 +90,50 @@
   color: var(--grisClaroAzulado);
 }
 
+.analisis__fases,
+.analisis__items,
+.analisis__rotaciones,
+.analisis__objetivos {
+  background-color: var(--blancoSuave);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  box-shadow: 0 4px 12px rgba(60, 76, 89, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--grisVerde);
+}
+
+.analisis__fases:hover,
+.analisis__items:hover,
+.analisis__rotaciones:hover,
+.analisis__objetivos:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(60, 76, 89, 0.1);
+}
+
+.analisis__fases h3,
+.analisis__items h3,
+.analisis__rotaciones h3,
+.analisis__objetivos h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--azulOscuro);
+  margin-bottom: 1rem;
+}
+
+.analisis__fases ul,
+.analisis__items ul,
+.analisis__rotaciones ul,
+.analisis__objetivos ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: var(--grisClaroAzulado);
+}
+
+
 /* === BOTÓN ABAJO === */
 .analyze-btn {
   display: inline-flex;
@@ -158,7 +202,11 @@
   transform: scale(0.96);
 }
 
-.analisis__fases h3 {
+
+.analisis__fases h3,
+.analisis__items h3,
+.analisis__rotaciones h3,
+.analisis__objetivos h3 {
   font-size: 1.4rem;
   border-left: 4px solid #f29c6b;
   padding-left: 0.5rem;
@@ -220,5 +268,124 @@
 }
 
 
+/*RESPONSIVE*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .rol {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; 
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .rol__jugador,
+  .rol__enemigo {
+    flex: 1 1 40%; 
+    gap: 1rem;
+  }
+
+  .rol__vs {
+    font-size: 2rem;
+    padding: 0 2rem;
+    order: 1; 
+  }
+
+  .info__rol {
+    max-width: 90%; 
+    font-size: 1.2rem;
+    margin: 1rem auto;
+  }
+
+  .analisis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .analisis__consejo {
+    grid-column: span 2;
+  }
+
+  .rol-info {
+    font-size: 1rem;
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .analyze-btn {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .inicio {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 140rem;
+    gap: 5rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem;
+  }
+
+  .rol {
+    flex: 1 1 100%;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+  }
+
+  .rol__jugador img,
+  .rol__enemigo img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .info__rol {
+    font-size: 1.5rem;
+    max-width: 45%;
+  }
+
+  .analisis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .analisis__fases,
+  .analisis__items,
+  .analisis__rotaciones,
+  .analisis__objetivos {
+    padding: 2.5rem;
+    font-size: 1.4rem;
+  }
+
+  .analisis__fases h3,
+  .analisis__items h3,
+  .analisis__rotaciones h3,
+  .analisis__objetivos h3 {
+    font-size: 2rem;
+  }
+
+  .consejo-experto {
+    font-size: 1.25rem;
+  }
+
+  .rol-info {
+    max-width: 55%;
+    font-size: 1.3rem;
+    padding: 2rem 2.5rem;
+  }
+
+  .analyze-btn {
+    font-size: 1.2rem;
+    padding: 1.6rem 3.5rem;
+    margin: 1rem 0 2rem;
+  }
+}
 
 
