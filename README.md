@@ -34,11 +34,15 @@ Entre las funcionalidades previstas estaban:
 
 ## 📸 Capturas
 
-![Pantalla principal](wrAnalyzer/public/screenshots/index-part1.png)
-![Pantalla principal Parte 2](wrAnalyzer/public/screenshots/index-part2.png)
-![Pantalla Analyzer](wrAnalyzer/public/screenshots/analyzer-part1.png)
-![Pantalla Analyzer Parte 2](wrAnalyzer/public/screenshots/analyzer-part2.png)
-![Pantalla Analyzer Parte 3](wrAnalyzer/public/screenshots/analyzer-part3.png)
+<p align="center">
+  <img src="wrAnalyzer/public/screenshots/index-part1.png" alt="Pantalla principal" height="160px" />
+  <img src="wrAnalyzer/public/screenshots/index-part2.png" alt="Pantalla principal Parte 2" height="160px" />
+  <img src="wrAnalyzer/public/screenshots/analyzer-part1.png" alt="Pantalla Analyzer" height="160px" />
+  <img src="wrAnalyzer/public/screenshots/analyzer-part2.png" alt="Pantalla Analyzer Parte 2" height="160px" />
+  <img src="wrAnalyzer/public/screenshots/analyzer-part3.png" alt="Pantalla Analyzer Parte 3" height="160px" />
+</p>
+
+
 
 ## 👩🏻‍🎨 Autora (yo)
 
